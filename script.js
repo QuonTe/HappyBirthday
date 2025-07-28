@@ -100,7 +100,7 @@ const maxDensity = 15000;
 // Mật độ điểm khi có 10 ảnh trở lên (thấp nhất)
 const minDensity = 4000;
 // Số lượng ảnh tối đa mà chúng ta quan tâm để điều chỉnh
-const maxGroupsForScale = 10;
+const maxGroupsForScale = 9;
 
 let pointsPerGroup;
 
@@ -527,7 +527,7 @@ function createPlanetTexture(size = 512) {
     ctx.fillRect(0, 0, size, size);
 
     // Các đốm màu ngẫu nhiên
-    const spotColors = ['#f8bbd0', '#e885a7ff', '#f48fb1', '#f48fb1', '#f06292', '#f06292', '#ffffff', '#e1aaff', '#a259f7', '#b2ff59'];
+    const spotColors = ['#f8bbd0', '#f48fb1', '#f48fb1', '#f06292', '#f06292', '#ffffff', '#e1aaff', '#a259f7', '#b2ff59'];
     for (let i = 0; i < 40; i++) {
         const x = Math.random() * size;
         const y = Math.random() * size;
